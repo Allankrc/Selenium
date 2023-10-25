@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="styles.css"/>
+    <script src="script.js"> </script>
+
+
+
+</head>
+<body>
+    <script src="script.js"> </script>
+
+    <div class="header-container-wrapper">
+        <div class="header-container">
+           <div class="cm-header-bg float-clear">
+              <div class="custom-logo"><span>SGF de Viagens</span></div>
+              <div class="custom-search">
+                 <form>
+                    <input type="text" placeholder="Search..">
+                    <button><i class="fa fa-search" aria-hidden="true"></i></button>
+                 </form>
+              </div>
+              <div class="custom-header-menu">
+                 <ul>
+                    <li><a href="#"><i class="fa fa-tachometer" aria-hidden="true"></i>Dashboard</a></li>
+                    <li><a href="#"><i class="fa fa-users" aria-hidden="true"></i>Solicitação</a></li>
+                    <li><a href="#"><i class="fa fa-envelope" aria-hidden="true"></i>Prestação</a></li>
+                    <li><a href="#"><i class="fa fa-paper-plane" aria-hidden="true"></i>Consultar</a></li>
+                 </ul>
+              </div>
+           </div>
+        </div>
+     </div>
+     <div class="body-container-wrapper" ng-app="dataApp">
+        <!-- 	<div ng-controller="dataCrtl">{{firstName}}</div> -->
+        <div class="body-container">
+           <div class="float-clear">
+              <div class="cm-content cm-app-area">
+                 <div class="cm-flex-tabber">
+                    <div class="custom-tab-click-menu float-clear">
+                       <ul id="tab-containment-wrapper">
+                          <li class="active"><a data-id="#tab1"><span>Usuários</span><i class="closeTab fa fa-times"></i></a></li>
+                          <li><a data-id="#tab2"><span>Viagens</span><i class="closeTab fa fa-times"></i></a></li>
+                          <li><a data-id="#tab3"><span>Postos Convertidos</span><i class="closeTab fa fa-times"></i></a></li>
+                          <li><a data-id="#tab4"><span>Tab #04</span><i class="closeTab fa fa-times"></i></a></li>
+                          <li><a data-id="#tab5"><span>Tab #05</span><i class="closeTab fa fa-times"></i></a></li>
+                       </ul>
+                       <div class="addTab"><a href="#"><span><i class="fa fa-plus" aria-hidden="true"></i></span></a></div>
+                    </div>
+                    <div class="custom-tab-relevent-content">
+                       <div class="custom-main-data">
+                          <div id="tab1" class="main-tab-data active-open-tab">Conteudo</div>
+                          <div id="tab2" class="main-tab-data">
+                             <div class="client-data">
+                                <div class="table-filter">
+                                   <ul>
+                                      <li><a href="show-hide-column" class="btn"><i class="fa fa-columns" aria-hidden="true"></i>Columns</a></li>
+                                      <li><a href="cm-filter-link" class="btn"><i class="fa fa-filter" aria-hidden="true"></i>Filter</a></li>
+                                      <li class="table-search">
+                                         <div class="table-inside">
+                                            <label>Search:</label>
+                                            <input type="text">
+                                         </div>
+                                      </li>
+                                      <li><a href="cm-filter-link" class="btn"><i class="fa fa-refresh" aria-hidden="true"></i>Refresh</a></li>
+                                      <li class="data-from-too-to"><label>Data From:</label><input type="number"><label>Data To:</label><input type="number">
+                                      </li>
+                                      <li class="action-performing">
+                                         <label>Action Perform:</label>
+                                         <select>
+                                            <option>Mark Important</option>
+                                            <option>Inside To Label</option>
+                                            <option>Hide Data</option>
+                                            <option>Delete Data</option>
+                                            <option>Block Data</option>
+                                            <option>Send Email</option>
+                                         </select>
+                                         <button>Go</button>
+                                      </li>
+                                   </ul>
+                                   <div class="cm-filter-wrapper">
+                                   </div>
+                                </div>
+                                <div class="table-wrapper">
+                                   <table class="large-data">
+                                      <thead>
+                                         <tr>
+                                            <th class="one">Sr No.</th>
+                                            <th class="two">Select</th>
+                                            <th class="three">Company Name</th>
+                                            <th class="four">Address</th>
+                                            <th class="five">City</th>
+                                            <th class="six">Pin Code</th>
+                                            <th class="seven">State</th>
+                                            <th class="eight">Phone One</th>
+                                            <th class="nine">Phone Two</th>
+                                            <th class="ten">Mobile One</th>
+                                            <th class="eleven">Mobile Two</th>
+                                            <th class="twelve">Email One</th>
+                                            <th class="thirteen">Email Two</th>
+                                            <th class="fourthteen">Website</th>
+                                            <th class="fiftheen">Business Type</th>
+                                            <th class="sixteen">Business Details</th>
+                                         </tr>
+                                      </thead>
+                                      <tbody>
+                                         <tr>
+                                            <td>1</td>
+                                            <td class="checkbox"><input type="checkbox"></td>
+                                            <td>Lightronics</td>
+                                            <td>Raja Ram Residency Shivaji Road, Nr. Santoshi Mata Mandir, off M.G Road, Kandivali West</td>
+                                            <td>Mumbai</td>
+                                            <td>400067</td>
+                                            <td>Maharashtra</td>
+                                            <td>22-28018849</td>
+                                            <td></td>
+                                            <td>9920798848</td>
+                                            <td>9004937902, 8655500031, 8655500032</td>
+                                            <td>mahesh@lightronics.in</td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td>Led Light Components, Tube Lights, Panel Lights, Bulbs</td>
+                                         </tr>
+                                         <tr>
+                                            <td>1</td>
+                                            <td class="checkbox"><input type="checkbox"></td>
+                                            <td>Lightronics</td>
+                                            <td>Raja Ram Residency Shivaji Road, Nr. Santoshi Mata Mandir, off M.G Road, Kandivali West</td>
+                                            <td>Mumbai</td>
+                                            <td>400067</td>
+                                            <td>Maharashtra</td>
+                                            <td>22-28018849</td>
+                                            <td></td>
+                                            <td>9920798848</td>
+                                            <td>9004937902, 8655500031 , 8655500032</td>
+                                            <td>mahesh@lightronics.in</td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td>Led Light Components, Tube Lights, Panel Lights, Bulbs</td>
+                                         </tr>
+                                         <tr>
+                                            <td>3</td>
+                                            <td class="checkbox"><input type="checkbox"></td>
+                                            <td>Goodone Infotech</td>
+                                            <td>Plot No. 137/138, Shiv Shankar Road, Opp Aaryan International School, Om Vihar, Uttam Nagar</td>
+                                            <td>Delhi</td>
+                                            <td>110059</td>
+                                            <td>Delhi</td>
+                                            <td></td>
+                                            <td></td>
+                                            <td>9555986099</td>
+                                            <td>9555516294, 9313827278</td>
+                                            <td>info@goodoneinfotech.com</td>
+                                            <td></td>
+                                            <td>=HYPERLINK(\"http://www.goodoneinfotech.com/\",\"www.goodoneinfotech.com\")</td>
+                                            <td></td>
+                                            <td>Led Lights</td>
+                                         </tr>
+                                         <tr>
+                                            <td>3</td>
+                                            <td class="checkbox"><input type="checkbox"></td>
+                                            <td>Goodone Infotech</td>
+                                            <td>Plot No. 137/138, Shiv Shankar Road, Opp Aaryan International School, Om Vihar, Uttam Nagar</td>
+                                            <td>Delhi</td>
+                                            <td>110059</td>
+                                            <td>Delhi</td>
+                                            <td></td>
+                                            <td></td>
+                                            <td>9555986099</td>
+                                            <td>9555516294, 9313827278</td>
+                                            <td>info@goodoneinfotech.com</td>
+                                            <td></td>
+                                            <td>=HYPERLINK(\"http://www.goodoneinfotech.com/\",\"www.goodoneinfotech.com\")</td>
+                                            <td></td>
+                                            <td>Led Lights</td>
+                                         </tr>
+                                         <tr>
+                                            <td>3</td>
+                                            <td class="checkbox"><input type="checkbox"></td>
+                                            <td>Goodone Infotech</td>
+                                            <td>Plot No. 137/138, Shiv Shankar Road, Opp Aaryan International School, Om Vihar, Uttam Nagar</td>
+                                            <td>Delhi</td>
+                                            <td>110059</td>
+                                            <td>Delhi</td>
+                                            <td></td>
+                                            <td></td>
+                                            <td>9555986099</td>
+                                            <td>9555516294, 9313827278</td>
+                                            <td>info@goodoneinfotech.com</td>
+                                            <td></td>
+                                            <td>=HYPERLINK(\"http://www.goodoneinfotech.com/\",\"www.goodoneinfotech.com\")</td>
+                                            <td></td>
+                                            <td>Led Lights</td>
+                                         </tr>
+                                         <tr>
+                                            <td>3</td>
+                                            <td class="checkbox"><input type="checkbox"></td>
+                                            <td>Goodone Infotech</td>
+                                            <td>Plot No. 137/138, Shiv Shankar Road, Opp Aaryan International School, Om Vihar, Uttam Nagar</td>
+                                            <td>Delhi</td>
+                                            <td>110059</td>
+                                            <td>Delhi</td>
+                                            <td></td>
+                                            <td></td>
+                                            <td>9555986099</td>
+                                            <td>9555516294, 9313827278</td>
+                                            <td>info@goodoneinfotech.com</td>
+                                            <td></td>
+                                            <td>=HYPERLINK(\"http://www.goodoneinfotech.com/\",\"www.goodoneinfotech.com\")</td>
+                                            <td></td>
+                                            <td>Led Lights</td>
+                                         </tr>
+                                         <tr>
+                                            <td>3</td>
+                                            <td class="checkbox"><input type="checkbox"></td>
+                                            <td>Goodone Infotech</td>
+                                            <td>Plot No. 137/138, Shiv Shankar Road, Opp Aaryan International School, Om Vihar, Uttam Nagar</td>
+                                            <td>Delhi</td>
+                                            <td>110059</td>
+                                            <td>Delhi</td>
+                                            <td></td>
+                                            <td></td>
+                                            <td>9555986099</td>
+                                            <td>9555516294, 9313827278</td>
+                                            <td>info@goodoneinfotech.com</td>
+                                            <td></td>
+                                            <td>=HYPERLINK(\"http://www.goodoneinfotech.com/\",\"www.goodoneinfotech.com\")</td>
+                                            <td></td>
+                                            <td>Led Lights</td>
+                                         </tr>
+                                         <tr>
+                                            <td>3</td>
+                                            <td class="checkbox"><input type="checkbox"></td>
+                                            <td>Goodone Infotech</td>
+                                            <td>Plot No. 137/138, Shiv Shankar Road, Opp Aaryan International School, Om Vihar, Uttam Nagar</td>
+                                            <td>Delhi</td>
+                                            <td>110059</td>
+                                            <td>Delhi</td>
+                                            <td></td>
+                                            <td></td>
+                                            <td>9555986099</td>
+                                            <td>9555516294, 9313827278</td>
+                                            <td>info@goodoneinfotech.com</td>
+                                            <td></td>
+                                            <td>=HYPERLINK(\"http://www.goodoneinfotech.com/\",\"www.goodoneinfotech.com\")</td>
+                                            <td></td>
+                                            <td>Led Lights</td>
+                                         </tr>
+                                         <tr>
+                                            <td>3</td>
+                                            <td class="checkbox"><input type="checkbox"></td>
+                                            <td>Goodone Infotech</td>
+                                            <td>Plot No. 137/138, Shiv Shankar Road, Opp Aaryan International School, Om Vihar, Uttam Nagar</td>
+                                            <td>Delhi</td>
+                                            <td>110059</td>
+                                            <td>Delhi</td>
+                                            <td></td>
+                                            <td></td>
+                                            <td>9555986099</td>
+                                            <td>9555516294, 9313827278</td>
+                                            <td>info@goodoneinfotech.com</td>
+                                            <td></td>
+                                            <td>=HYPERLINK(\"http://www.goodoneinfotech.com/\",\"www.goodoneinfotech.com\")</td>
+                                            <td></td>
+                                            <td>Led Lights</td>
+                                         </tr>
+                                         <tr>
+                                            <td>3</td>
+                                            <td class="checkbox"><input type="checkbox"></td>
+                                            <td>Goodone Infotech</td>
+                                            <td>Plot No. 137/138, Shiv Shankar Road, Opp Aaryan International School, Om Vihar, Uttam Nagar</td>
+                                            <td>Delhi</td>
+                                            <td>110059</td>
+                                            <td>Delhi</td>
+                                            <td></td>
+                                            <td></td>
+                                            <td>9555986099</td>
+                                            <td>9555516294, 9313827278</td>
+                                            <td>info@goodoneinfotech.com</td>
+                                            <td></td>
+                                            <td>=HYPERLINK(\"http://www.goodoneinfotech.com/\",\"www.goodoneinfotech.com\")</td>
+                                            <td></td>
+                                            <td>Led Lights</td>
+                                         </tr>
+                                      </tbody>
+                                   </table>
+                                </div>
+                             </div>
+                          </div>
+                           
+                          <div id="tab3" class="main-tab-data">
+                             <div class="tabber-inside-tabber">
+                                <div id="email-tab-tab-one" class="tabber-contents-inner active-tab-tab">
+                                   <h1 class="tabber-inside-tabber-heading">Email Body</h1>
+                                   <textarea>Testing Email Text</textarea>
+                                   <div class="send-email-button-wrapper full-width"> 
+                                      <button class="btn-send-emails blue next-btn" id="next">Next<i class="fa fa-chevron-right" aria-hidden="true"></i></button>
+                                      <button class="btn-send-emails green" id="save"><i class="fa fa-cloud" aria-hidden="true"></i>Save</button>
+                                   </div>
+                                </div>
+                                <div id="email-tab-tab-two" class="tabber-contents-inner">
+                                   <h1 class="tabber-inside-tabber-heading">Email Setting</h1>
+                                   <div class="cm-send-email-header">
+                                      <h3>Send Email</h3>
+                                      <h4>All Email Selected From "Data Emails TAB"</h4>
+                                      <div class="cm-emailer-input-fields">
+                                         <label>Emails From</label>
+                                         <input type="text" class="cm-selected-emails" value="suryansh@buyautospares.com">
+                                         <label>Emails To</label>
+                                         <input type="text" class="cm-selected-emails">
+                                         <label>Subject</label>
+                                         <input type="text" class="cm-selected-emails cm-subjected">
+                                         <h5 class="mail-theme-selection">Mail Selected Theme: <span>#Sample 01</span></h5>
+                                         <div class="send-email-button-wrapper"> 
+                                            <button class="btn-send-emails blue next-btn" id="next">Next<i class="fa fa-chevron-right" aria-hidden="true"></i></button>
+                                            <button class="btn-send-emails green" id="save"><i class="fa fa-cloud" aria-hidden="true"></i>Save</button>
+                                         </div>
+                                      </div>
+                                   </div>
+                                </div>
+                                <div id="email-tab-tab-three" class="tabber-contents-inner">
+                                   <h1 class="tabber-inside-tabber-heading">Email Publising</h1>
+                                   <div class="send-email-button-wrapper"> 
+                                      <button class="btn-send-emails orange"><i class="fa fa-clock-o" aria-hidden="true"></i>Schedule Send</button>
+                                      <button class="btn-send-emails green" id="sendEmail"><i class="fa fa-paper-plane" aria-hidden="true"></i>Send Emails</button>
+                                   </div>
+                                </div>
+                             </div>
+                          </div>
+                          <div id="tab4" class="main-tab-data">Tab04</div>
+                          <div id="tab5" class="main-tab-data">Tab05</div>
+                       </div>
+                    </div>
+                 </div>
+              </div>
+              <div class="cm-sidebar">
+                 <div class="cm-sidebar-breadcrumb">
+                    <h4 class="cm-sidebar-default-heading">User Map</h4>
+                    <ul>
+                       <li><a href="#">Home</a></li>
+                       <li><a href="#" class="tab-section">Browse</a></li>
+                       <li><a href="#">Info Ground</a></li>
+                    </ul>
+                 </div>
+                 <div class="side-menu-according-to-tabber-wrapper">
+                    <h4 class="cm-sidebar-default-heading">SiteMap</h4>
+                    <ul class="side-menu-according-to-tabber">
+                       <li tab-tab-rel="#email-tab-tab-one" class="tab-tab-active-menu"><a>Email Body</a></li>
+                       <li tab-tab-rel="#email-tab-tab-two"><a>Email Setting</a></li>
+                       <li tab-tab-rel="#email-tab-tab-three"><a>Email Publish</a></li>
+                    </ul>
+                 </div>
+                 <div class="cm-sidebar-user">
+                    <ul class="menu-sidebar-items">
+                       <li><a href="#"><i class="fa fa-cog" aria-hidden="true"></i>User Setting</a></li>
+                       <li class="save"><a href="#"><i class="fa fa-cloud" aria-hidden="true"></i>Save<b>Save All Data Before Closed</b></a></li>
+                       <li class="logout-save-closed"><a href="#"><i class="fa fa-sign-out" aria-hidden="true"></i>Logout<b>Logout Form Session</b></a></li>
+                    </ul>
+                    <div class="menu-text">Menu</div>
+                 </div>
+              </div>
+           </div>
+        </div>
+     </div>
+     <div class="footer-container-wrapper">
+        <div class="footer-container">
+           <div class="page-center">
+           </div>
+        </div>
+     </div>
+    </body>
+    <script src="script.js"> </script>
+</html>
+
+
